@@ -4,9 +4,25 @@
   },
   "records": {
     "CNAME": "aba-ai-assistant-wtwd.vercel.app",
+
     "TXT": {
-      "_vercel": "vc-domain-verify=is-a.dev,9846614a86ada36c449e"
-    }
+      "_vercel": "vc-domain-verify=is-a.dev,9846614a86ada36c449e",
+      "resend._domainkey.aba-ai-assistant": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWm2+VXGFMX+bCjV2cZvPY7pu0Nbq25wDKnmv5b+rihoZPq5Nb85n3WuM6Uh24hhPffq7GTLYMmJ+9aULcWA7iGOXHsdYly2+8MyAYMAaiMYlzHzL3AO0e0vjZsanemzG4Fk7NShAt0tzFcqmMbViFbdz2vpXU6zVBfkbPa/zQJQIDAQAB",
+      "send.aba-ai-assistant": "v=spf1 include:amazonses.com ~all",
+      "_dmarc": "v=DMARC1; p=none;"
+    },
+
+    "MX": [
+      {
+        "name": "send.aba-ai-assistant",
+        "value": "feedback-smtp.us-east-1.amazonses.com",
+        "priority": 10
+      },
+      {
+        "name": "aba-ai-assistant",
+        "value": "inbound-smtp.us-east-1.amazonaws.com",
+        "priority": 10
+      }
+    ]
   }
 }
-
